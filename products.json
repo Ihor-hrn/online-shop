@@ -54,5 +54,12 @@
         "image": "tesla-roadster.jpg",
         "description": "Best sports car in the World",
         "price": 249999.99
+    }, 
+    {
+        "id": "9",
+        "title": "Sweet honey",
+        "image": "honeyInCeramic.jpg",
+        "description": "Best honey in Ukraine",
+        "price": 1000000.01
     }
 ]

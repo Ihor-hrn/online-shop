@@ -74,7 +74,7 @@ class Cart {
   }
   order(ev) {
     const form = this.cartContainer.find('form')[0];
-    if (form.checkValidity()) {
+    if (form.checkValidity() && Object.keys(this.cart).length !== 0) {
       ev.preventDefault();
       fetch('order', {
         method: 'POST',

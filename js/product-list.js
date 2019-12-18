@@ -4,6 +4,7 @@ class ProductList {
     fetch(productsUrl)
       .then(result => result.json())
       .then(products => {
+        products.sort( (a, b) => b.price - a.price );
         this.products = products;
         this.renderProducts(renderContainer, products);
         this.addEventListeners();
